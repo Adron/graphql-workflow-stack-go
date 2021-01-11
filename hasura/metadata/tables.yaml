@@ -1,6 +1,18 @@
 - table:
     schema: tododeluge
     name: Todo
+  object_relationships:
+  - name: todoByTodoid
+    using:
+      foreign_key_constraint_on: TodoId
+  array_relationships:
+  - name: Todos
+    using:
+      foreign_key_constraint_on:
+        column: TodoId
+        table:
+          schema: tododeluge
+          name: Todo
 - table:
     schema: tododeluge
     name: User
