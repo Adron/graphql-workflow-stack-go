@@ -1,0 +1,7 @@
+# Add a todo item.
+mutation {
+    insert_tododeluge_Todo_one(object: {Todo: "", TodoId: "", Details: "", UserId ""}) {
+        Id
+        Stamp
+    }
+}

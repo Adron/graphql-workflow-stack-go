@@ -1,0 +1,14 @@
+# Keeps an active list within the heirarchy of what is added per subscription.
+
+subscription MyQuery {
+    tododeluge_Todo(where: {TodoId: {_is_null: true}, UserId: {_eq: "eb055aca-6bff-44f6-a35b-62678ce4f70b"}}, order_by: {Stamp: asc}) {
+        Stamp
+        Todo
+        Details
+        Todos(order_by: {Stamp: asc}) {
+            Stamp
+            Todo
+            Details
+        }
+    }
+}

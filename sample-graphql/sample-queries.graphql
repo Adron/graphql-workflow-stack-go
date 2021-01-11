@@ -1,0 +1,28 @@
+# Get all the stuff query.
+query todoMothershipList {
+  tododeluge_Todo(where: {TodoId: {_is_null: true}, UserId: {_eq: ""}}) {
+    Id
+    TodoId
+    Stamp
+    Todo
+    Details
+    Todos {
+      Id
+      TodoId
+      Stamp
+      Todo
+      Details
+    }
+  }
+}
+
+# Flat list query.
+query todoFlatEarthList {
+  tododeluge_Todo{
+    Id
+    TodoId
+    Stamp
+    Todo
+    Details
+  }
+}

@@ -1,0 +1,6 @@
+version: 2
+endpoint: https://graphql-go-workflow.hasura.app/
+metadata_directory: metadata
+actions:
+  kind: synchronous
+  handler_webhook_baseurl: https://graphql-go-workflow.hasura.app/
