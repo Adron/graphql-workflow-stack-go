@@ -1,0 +1,6 @@
+- table:
+    schema: tododeluge
+    name: Todo
+- table:
+    schema: tododeluge
+    name: User

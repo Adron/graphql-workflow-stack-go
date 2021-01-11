@@ -1,0 +1,1 @@
+CREATE TABLE "tododeluge"."todo"("Id" UUID NOT NULL DEFAULT gen_random_uuid(), "Stamp" timestamptz NOT NULL DEFAULT now(), "todo" text NOT NULL, "details" text, PRIMARY KEY ("Id") , UNIQUE ("Id"), UNIQUE ("details"));

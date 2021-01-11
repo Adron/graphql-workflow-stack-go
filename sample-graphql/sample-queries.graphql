@@ -1,0 +1,12 @@
+Get all the stuff query.
+
+
+query MyQuery {
+  tododeluge_Todo {
+    Id
+    Details
+    Stamp
+    Todo
+    TodoId
+  }
+}
